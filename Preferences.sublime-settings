@@ -1,0 +1,8 @@
+{
+	// Automatically create projects for folders
+	//
+	// If ``true``, a ``<Folder>.sublime-project`` file is created
+	// in `.sublime/` sub directory, if a new window is created
+	// with a single folder assigned (e.g. via ``subl <Folder>``).
+	"auto_generate_folder_projects": true,
+}
