@@ -70,8 +70,8 @@ class FolderProjectAssigner(sublime_plugin.EventListener):
 
     def find_project_file(self, root):
         patterns = (
-            "*.sublime-workspace",
-            ".sublime/*.sublime-workspace"
+            "*.sublime-project",
+            ".sublime/*.sublime-project"
         )
         for pattern in patterns:
             try:
