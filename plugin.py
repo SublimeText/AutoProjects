@@ -16,9 +16,9 @@ PROJECT_TEMPLATE = R"""
 """
 
 
-class FolderProjectAssigner(sublime_plugin.EventListener):
+class AutoProjectAssigner(sublime_plugin.EventListener):
     """
-    This class describes a folder project assigner.
+    This class describes an auto project assigner.
 
     If a new window is opened with a single folder but no project assigned,
     it is very likely a result of ``subl folder``.
@@ -53,7 +53,7 @@ class FolderProjectAssigner(sublime_plugin.EventListener):
         project_file = self.find_project_file(root)
         if not project_file:
             settings = sublime.load_settings("Preferences.sublime-settings")
-            if not settings.get("auto_generate_folder_projects", True):
+            if not settings.get("auto_generate_projects", True):
                 return
 
             sublime_dir = root / ".sublime"

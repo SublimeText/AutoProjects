@@ -1,4 +1,4 @@
-# Folder Projects
+# AutoProjects
 
 A [Sublime Text][] plugin to automatically assigns projects to opened folders.
 
